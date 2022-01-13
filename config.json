@@ -1,0 +1,8 @@
+{
+    "randomIntegerRange": 100,
+    "fixedRangeMin": 1.01,
+    "fixedRangeMax": 0.99,
+    "randomFloatRange": 3,
+    "randomStringRange": 10,
+    "randomStringData": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+}
