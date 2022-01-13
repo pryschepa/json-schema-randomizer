@@ -1,4 +1,3 @@
-const e = require("express");
 const express = require("express");
 const RandExp = require("randexp");
 const app = express();
@@ -9,10 +8,11 @@ const config = require("./config.json");
 let definitions;
 
 app.get("/", (req, res) => {
-  result = main(input);
-  res.send(result);
+  //result = main(input);
+  res.send("just4fun");
 });
 
+//основная функция которая делает главные проверки и запускает рекурсию
 function main(input) {
   let result = {};
   let keys = Object.keys(input);
@@ -151,7 +151,7 @@ app.listen(port, () => {
   console.log(main(input));
 });
 
-//блок рандома
+//блок рандомайзера - вынести отдельно
 function randomText(length) {
   var result = "";
   var characters = config.randomStringData;
